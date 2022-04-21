@@ -1,37 +1,21 @@
-import React, {useState} from 'react';
-import {productsData} from '../../mockdata/productsData'
+import React from 'react';
 
 import classes from './main.module.scss'
 
 import MainBlock from "../MainBlock/MainBlock";
+import {useSelector} from "react-redux";
 
 const Main = () => {
 
-  const [value, setValue] = useState('')
 
-  const catalog = productsData.filter(
-      (item) =>
-          item.category.includes(value)
-  );
+  const catalog = useSelector((state) => state.productReducer)
+  const filterState = useSelector((state) => state.filterReducer)
+  const filteredCatalog = filterState === 'Все' ? catalog : catalog.filter((card) => card.category === filterState)
 
-  const giveCategory = (e) => {
-    setValue(e.target.value)
-  }
   return (
       <main
           className={classes.main}>
-        <select
-            className={classes.main__select}
-            value={value}
-            onChange={giveCategory}>
-          <option value={''}>Все</option>
-          <option>Овощи</option>
-          <option>Фрукты</option>
-          <option>Ягоды</option>
-          <option>Рыба</option>
-          <option>Сладости</option>
-        </select>
-        {catalog.map((product) => {
+        {filteredCatalog.map((product) => {
           return <MainBlock
               key={product.id}
               img={product.img}
