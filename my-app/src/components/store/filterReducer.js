@@ -1,4 +1,3 @@
-
 const defaultState = 'Все'
 
 export const filterReducer = (state = defaultState, action) => {

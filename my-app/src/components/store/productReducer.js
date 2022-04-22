@@ -8,7 +8,11 @@ export const productReducer = (state = defaultState, action) => {
     case "GET_CATALOG":
       return state
 
+    case "ADD_CARD":
+      return [...state, action.payload]
+
     default:
       return state
+
   }
 }

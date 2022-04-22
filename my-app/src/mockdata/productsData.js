@@ -13,70 +13,70 @@ import grillage from '../assets/Grillage.png'
 export const productsData = [
   {
     img: onions,
-    id: 0,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Зеленный лук',
     description: 'это недозрелые листья репчатого лука.',
     category: 'Овощи',
   },
   {
     img: carrots,
-    id: 1,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Морковь',
     description: 'овощ со съедобным сладковатым оранжевым утолщённым корнем.',
     category: 'Овощи'
   },
   {
     img: apricot,
-    id: 2,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Абрикос',
     description: 'круглый бархатистый жёлто-оранжевый плод абрикосового дерева.',
     category: 'Фрукты'
   },
   {
     img: quince,
-    id: 3,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Айва',
     description: 'похожа одновременно и на яблоко, и на грушу.',
     category: 'Фрукты'
   },
   {
     img: cherry,
-    id: 4,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Вишня',
     description: 'маленькая и кислая',
     category: 'Ягоды'
   },
   {
     img: irg,
-    id: 5,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Ирга',
     description: 'вкусная ягода',
     category: 'Ягоды'
   },
   {
     img: anchovy,
-    id: 6,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Анчоус',
     description: 'мелкая рыба',
     category: 'Рыба'
   },
   {
     img: carp,
-    id: 7,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Карп',
     description: 'вкусная рыба',
     category: 'Рыба'
   },
   {
     img: waffles,
-    id: 8,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Вафли',
     description: 'вкусные вафли',
     category: 'Сладости'
   },
   {
     img: grillage,
-    id: 9,
+    id: Math.floor(Math.random() * (500 - 1)) + 1,
     name: 'Грильяж',
     description: 'Вкусные конфеты Грильяж',
     category: 'Сладости'

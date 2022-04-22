@@ -1,4 +1,4 @@
-import {GET_CATALOG, SET_FILTER_STATE} from './actionTypes'
+import {ADD_CARD, GET_CATALOG, SET_FILTER_STATE} from './actionTypes'
 
 export function setFilterStateAction(payload) {
   return {
@@ -13,3 +13,11 @@ export function getCatalogAction(payload) {
     payload
   }
 }
+
+export function addCardAction(payload) {
+  return {
+    type: ADD_CARD,
+    payload
+  }
+}
+
